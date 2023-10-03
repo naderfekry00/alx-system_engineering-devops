@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | lc_all=c sort -f
+find . -type f -name "*.gif" | sort -f -i | sed -e 's/\.gif//g' | while read file; do echo "$file"
