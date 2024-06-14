@@ -1,1 +1,3 @@
-Lets see
+#!/usr/bin/env bash
+#reboot gunicorn gracefully
+sudo pgrep gunicorn | sudo xargs kill -HUP
